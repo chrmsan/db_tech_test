@@ -5,7 +5,7 @@ class Appsy < Sinatra::Base
     erb :index
   end
 
-  post '/names' do
+  get '/names' do
     @partner1 = params[:partner_1_name]
     @partner2 = params[:partner_2_name]
     erb :match
